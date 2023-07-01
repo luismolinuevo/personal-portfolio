@@ -1,60 +1,57 @@
 import React, { useState } from "react";
-import { RxHamburgerMenu } from "react-icons/rx";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 export default function Navbar() {
   const [openNav, setOpenNav] = useState(false);
 
-  // useState(() => {
-  //     if (openNav) {
-  //       document.body.style.overflow = 'hidden'; // Disable scrolling
-  //     } else {
-  //       document.body.style.overflow = ''; // Enable scrolling
-  //     }
-  //   }, [openNav]);
+//   useState(() => {
+//       if (openNav) {
+//         document.body.style.overflow = 'hidden'; // Disable scrolang
+//       } else {
+//         document.body.style.overflow = ''; // Enable scrolang
+//       }
+//     }, [openNav]);
 
   return (
     <header
       className={`w-full px-[50px] py-6 md:px-[80px] ${
-        openNav ? "bg-[#05aff2] h-screen" : ""
+        openNav ? "bg-main h-screen" : ""
       }`}
     >
       <nav className="flex justify-between">
-        <h1 className={`${openNav ? "hidden" : ""}`}>Molinuevo</h1>
+        <a className="cursor-pointer"><h1 className={`text-[40px] ${openNav ? "hidden" : ""}`}><span className="text-main">Moli</span>nuevo</h1></a>
         <div
           className={`${
             openNav ? "h-screen w-full flex justify-center items-center" : ""
           } `}
         >
           <ul
-            className={`md:flex ${
-              openNav ? "flex flex-col text-center" : "hidden"
+            className={`md:flex gap-6 md:text-[23px] md:items-center ${
+              openNav ? "flex flex-col text-center text-[20px] text-black" : "hidden"
             }`}
-            // className={`${
-            //     openNav ? "md:flex" : "hidden md:flex"
-            //   } flex-col text-center md:flex-row`}
           >
-            <li>
-              <a>Home</a>
-            </li>
-            <li>
-              <a>About</a>
-            </li>
-            <li>
-              <a>Skills</a>
-            </li>
-            <li>
-              <a>Projects</a>
-            </li>
-            <li>
-              <a>Contact Me</a>
-            </li>
+            <a className="text-main cursor-pointer" onClick={() => setOpenNav(false)}>
+              <li>Home</li>
+            </a>
+            <a className="cursor-pointer" onClick={() => setOpenNav(false)}>
+              <li>About</li>
+            </a>
+            <a className="cursor-pointer" onClick={() => setOpenNav(false)}>
+              <li>Skills</li>
+            </a>
+            <a className="cursor-pointer" onClick={() => setOpenNav(false)}>
+              <li>Projects</li>
+            </a>
+            <a className="bg-main p-2 cursor-pointer text-white shadow-2xl" onClick={() => setOpenNav(false)}>
+              <li>Contact Me</li>
+            </a>
           </ul>
         </div>
         <button
-          className={`md:hidden ${openNav ? "hidden" : ""}`}
+          className={`md:hidden text-[25px] text-main ${openNav ? "hidden" : ""}`}
           onClick={() => setOpenNav(true)}
         >
-          <RxHamburgerMenu />
+          <GiHamburgerMenu />
         </button>
         {openNav ? (
           <div className="absolute top-0 right-0 pr-8">

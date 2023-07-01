@@ -16,7 +16,7 @@ export default function Homepage() {
           y: [0, 8, -8, 0], // Add more values for vertical movement
         }}
         transition={{
-          duration: 10,
+          duration: 5,
           repeat: Infinity,
           repeatType: 'mirror',
         }}

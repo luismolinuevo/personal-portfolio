@@ -5,7 +5,18 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        "tit": ["Titillium Web", "sans-serif"]
+      },
+      colors: {
+        main: '#05aff2'
+      },
+      fontSize: {
+        heading: "30px",
+        modileHeading: "25px"
+      }
+    },
   },
   plugins: [],
 }
