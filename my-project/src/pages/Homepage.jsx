@@ -21,7 +21,7 @@ export default function Homepage() {
             className="text-[40px] text-main"
             animate={{ y: 0 }}
             initial={{ y: -100 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
+            transition={{ duration: 0.7, delay: 0.2 }}
           >
             Hello!
           </motion.h1>
@@ -29,7 +29,7 @@ export default function Homepage() {
             className="text-[65px]"
             animate={{ y: 0 }}
             initial={{ y: -100 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
+            transition={{ duration: 0.7, delay: 0.4 }}
           >
             Im Luis
           </motion.h2>
@@ -37,7 +37,7 @@ export default function Homepage() {
             className="text-[65px]"
             animate={{ y: 0 }}
             initial={{ y: -100 }}
-            transition={{ duration: 0.8, delay: 0.6 }}
+            transition={{ duration: 0.7, delay: 0.6 }}
           >
             <span className="text-main">Moli</span>nuevo
           </motion.h3>
@@ -45,13 +45,13 @@ export default function Homepage() {
             className="text-[35px]"
             animate={{ y: 0 }}
             initial={{ y: -100 }}
-            transition={{ duration: 0.8, delay: 0.8 }}
+            transition={{ duration: 0.7, delay: 0.8 }}
           >
             Full Stack Web Developer
           </motion.h4>
         </div>
       </main>
-      <aside className="hidden md:flex flex-col absolute top-[350px] right-12">
+      {/* <aside className="hidden md:flex flex-col absolute top-[350px] right-12">
         <div className="flex flex-col items-center justify-center">
           <h1 className="mb-2 transform rotate-90 text-[20px]">Find me at</h1>
           <hr className="w-[2px] h-8 bg-black mt-6 mb-1" />
@@ -61,7 +61,31 @@ export default function Homepage() {
             <a href={Resume} target="blank_" className="cursor-pointer"><BsFillFileEarmarkFill /></a>
           </div>
         </div>
-      </aside>
+      </aside> */}
+<aside className="hidden md:flex flex-col absolute top-[350px] right-12">
+  <motion.div
+    className="flex flex-col items-center justify-center"
+    initial={{ y: -100, opacity: 0 }}
+    animate={{ y: 0, opacity: 1 }}
+    transition={{ duration: 0.6, delay: 1.2 }}
+  >
+    <h1 className="mb-2 transform rotate-90 text-[20px]">Find me at</h1>
+    <hr className="w-[2px] h-8 bg-black mt-6 mb-1" />
+    <div className="flex flex-col items-center justify-center text-main text-[25px] gap-2">
+      <a href="https://github.com/luismolinuevo" target="_blank" className="cursor-pointer">
+        <BsGithub />
+      </a>
+      <a href="https://www.linkedin.com/in/luismolinuevo/" target="_blank" className="cursor-pointer">
+        <BsLinkedin />
+      </a>
+      <a href={Resume} target="blank_" className="cursor-pointer">
+        <BsFillFileEarmarkFill />
+      </a>
+    </div>
+  </motion.div>
+</aside>
+
+
     </section>
   );
 }
