@@ -5,7 +5,7 @@ import Navbar from './components/Navbar'
 
 function App() {
   return (
-    <div className='bg-[#e5e5e5] text-[black] font-tit'>
+    <div className='min-h-screen bg-[#e5e5e5] text-[black] font-tit'>
       <Navbar/>
       <Homepage/>
     </div>
