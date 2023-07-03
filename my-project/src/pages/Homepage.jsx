@@ -1,11 +1,13 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { BsGithub, BsLinkedin, BsFillFileEarmarkFill } from "react-icons/bs";
-import Resume from "../assets/Resume.pdf"
+import Resume from "../assets/Resume.pdf";
 
 export default function Homepage() {
   return (
     <section className="w-full h-screen px-[50px] py-6 md:px-[80px] md:flex justify-center">
+      <div>
+
       {/* <div className="">
         <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" className="p-0 w-64 h-64 absolute top-0 right-0 mt-14 mr-14">
           <path
@@ -62,30 +64,42 @@ export default function Homepage() {
           </div>
         </div>
       </aside> */}
-<aside className="hidden md:flex flex-col absolute top-[350px] right-12">
-  <motion.div
-    className="flex flex-col items-center justify-center"
-    initial={{ y: -100, opacity: 0 }}
-    animate={{ y: 0, opacity: 1 }}
-    transition={{ duration: 0.6, delay: 1.2 }}
-  >
-    <h1 className="mb-2 transform rotate-90 text-[20px]">Find me at</h1>
-    <hr className="w-[2px] h-8 bg-black mt-6 mb-1" />
-    <div className="flex flex-col items-center justify-center text-main text-[25px] gap-2">
-      <a href="https://github.com/luismolinuevo" target="_blank" className="cursor-pointer">
-        <BsGithub />
-      </a>
-      <a href="https://www.linkedin.com/in/luismolinuevo/" target="_blank" className="cursor-pointer">
-        <BsLinkedin />
-      </a>
-      <a href={Resume} target="blank_" className="cursor-pointer">
-        <BsFillFileEarmarkFill />
-      </a>
-    </div>
-  </motion.div>
-</aside>
+      <aside className="hidden md:flex flex-col absolute top-[350px] right-12">
+        <motion.div
+          className="flex flex-col items-center justify-center"
+          initial={{ y: -100, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.6, delay: 1.2 }}
+        >
+          <h1 className="mb-2 transform rotate-90 text-[20px]">Find me at</h1>
+          <hr className="w-[2px] h-8 bg-black mt-6 mb-1" />
+          <div className="flex flex-col items-center justify-center text-main text-[25px] gap-2">
+            <a
+              href="https://github.com/luismolinuevo"
+              target="_blank"
+              className="cursor-pointer"
+            >
+              <BsGithub />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/luismolinuevo/"
+              target="_blank"
+              className="cursor-pointer"
+            >
+              <BsLinkedin />
+            </a>
+            <a href={Resume} target="blank_" className="cursor-pointer">
+              <BsFillFileEarmarkFill />
+            </a>
+          </div>
+        </motion.div>
+      </aside>
+      <div className="flex justify-center">
+        
+      </div>
 
 
+      </div>
     </section>
   );
 }

@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        "tit": ["Titillium Web", "sans-serif"]
+        "tit": ["Titillium Web", "sans-serif"],
       },
       colors: {
         main: '#05aff2'
