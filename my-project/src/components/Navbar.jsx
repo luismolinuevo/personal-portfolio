@@ -33,8 +33,8 @@ export default function Navbar() {
             <a className="text-main cursor-pointer" onClick={() => setOpenNav(false)}>
               <li>Home</li>
             </a>
-            <a className="cursor-pointer" onClick={() => setOpenNav(false)}>
-              <li>About</li>
+            <a className="cursor-pointer" href="#aboutme" onClick={() => setOpenNav(false)}>
+              <li>About Me</li>
             </a>
             <a className="cursor-pointer" onClick={() => setOpenNav(false)}>
               <li>Skills</li>
