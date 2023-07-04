@@ -36,7 +36,7 @@ export default function Navbar() {
             <a className="cursor-pointer" href="#aboutme" onClick={() => setOpenNav(false)}>
               <li>About Me</li>
             </a>
-            <a className="cursor-pointer" onClick={() => setOpenNav(false)}>
+            <a className="cursor-pointer" href="#skills" onClick={() => setOpenNav(false)}>
               <li>Skills</li>
             </a>
             <a className="cursor-pointer" onClick={() => setOpenNav(false)}>
