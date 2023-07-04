@@ -17,7 +17,7 @@ export default function Homepage() {
           />
         </svg>
       </div> */}
-      <main className="w-full flex justify-center text-center pt-[80px] md:pt-[120px]">
+      <main className="w-full flex justify-center text-center pt-[80px] md:pt-[125px]">
         <div className="flex flex-col">
           <motion.h1
             className="text-[40px] text-main"
