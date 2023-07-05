@@ -26,9 +26,13 @@ const ImageCard = ({ imageUrl, about, id, title, gitHub, liveLink, stack }) => {
           <p className="text-center text-lg pb-4">{about}</p>
           <p className="text-white text-center text-xl pb-4">{stack}</p>
           <div className="flex gap-2">
-            <a href={gitHub} target="_blank" className="text-[30px]">
-              <BsGlobe />
-            </a>
+            {liveLink != null ? (
+              <a href={gitHub} target="_blank" className="text-[30px]">
+                <BsGlobe />
+              </a>
+            ) : (
+              <p></p>
+            )}
             <a href={liveLink} target="_blank" className="text-[30px]">
               <BsGithub />
             </a>
