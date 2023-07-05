@@ -4,13 +4,13 @@ import { GiHamburgerMenu } from "react-icons/gi";
 export default function Navbar() {
   const [openNav, setOpenNav] = useState(false);
 
-//   useState(() => {
-//       if (openNav) {
-//         document.body.style.overflow = 'hidden'; // Disable scrolang
-//       } else {
-//         document.body.style.overflow = ''; // Enable scrolang
-//       }
-//     }, [openNav]);
+  // useState(() => {
+  //     if (openNav) {
+  //       document.body.style.overflow = 'hidden'; // Disable scrolang
+  //     } else {
+  //       document.body.style.overflow = ''; // Enable scrolang
+  //     }
+  //   }, [openNav]);
 
   return (
     <header
