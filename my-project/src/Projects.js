@@ -30,12 +30,12 @@ const projects = [
         techStack: ["React.js", "CSS", "Express", "SequelizeORM", "PostgreSQL", ],
         img: JournalApp
     },
-    {
+    // {
 
-    },
-    {
+    // },
+    // {
         
-    }
+    // }
 ]
 
 export default projects;
