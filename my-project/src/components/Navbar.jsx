@@ -43,7 +43,7 @@ export default function Navbar() {
             <a className="cursor-pointer" href="#projects" onClick={() => setOpenNav(false)}>
               <li>Projects</li>
             </a>
-            <a className="bg-main p-2 cursor-pointer text-white shadow-2xl" onClick={() => setOpenNav(false)}>
+            <a className="bg-main p-2 cursor-pointer text-white shadow-2xl" href="#contactme" onClick={() => setOpenNav(false)}>
               <li>Contact Me</li>
             </a>
           </ul>
