@@ -13,8 +13,8 @@ export default {
         main: '#05aff2'
       },
       fontSize: {
-        heading: "45px",
-        modileHeading: "35px"
+        heading: "50px",
+        modileHeading: "40px"
       }
     },
   },

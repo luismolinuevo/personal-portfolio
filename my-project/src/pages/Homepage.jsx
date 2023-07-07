@@ -5,7 +5,7 @@ import Resume from "../assets/Resume.pdf";
 
 export default function Homepage() {
   return (
-    <section className="w-full h-screen px-[50px] py-7 md:px-[80px] md:flex justify-center">
+    <section className="w-full h-screen px-[50px] py-24 md:px-[80px] md:flex justify-center" id="home">
       <div>
 
       {/* <div className="">
@@ -17,7 +17,7 @@ export default function Homepage() {
           />
         </svg>
       </div> */}
-      <main className="w-full flex justify-center text-center pt-[80px] md:pt-[125px]">
+      <main className="w-full flex justify-center text-center pt-[40px] md:pt-[125px]">
         <div className="flex flex-col">
           <motion.h1
             className="text-[40px] text-main"
@@ -94,8 +94,9 @@ export default function Homepage() {
           </div>
         </motion.div>
       </aside>
-      <div className="flex justify-center">
-        
+      <div className="flex justify-center gap-2 mt-4">
+        <a href="#projects" className="bg-main text-white p-2 md:p-3 text-xl">My work</a>
+        <a href="#contactme" className="border-2 border-main p-2 md:p-3 text-main text-xl">Hire Me!</a>
       </div>
 
 

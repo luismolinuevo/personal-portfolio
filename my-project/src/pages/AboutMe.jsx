@@ -8,8 +8,8 @@ export default function AboutMe() {
         About me
       </h1>
       <div className="flex justify-center">
-        <div className="md:flex md:justify-between gap-64 font-bold">
-          <div>
+        <div className="md:flex md:justify-between gap-40 md:gap-64 font-bold">
+          <div className="">
             <h1 className="text-[25px] md:text-[30px] text-main font-bold">Hello!</h1>
             <p className=" text-[22px] md:text-[25px] md:leading-8">
               My name is Luis Molinuevo, a Web Developer. I'm
@@ -20,14 +20,16 @@ export default function AboutMe() {
               <br /> applications.
             </p> 
           </div>
-
+{/* <div className="w-1/flex items-center"> */}
           <div className="w-80 h-80 rounded-full overflow-hidden border-4 border-main shadow-2xl mt-8 md:mt-0">
+
             <img
               className="w-full h-full object-center object-cover"
               src={ImageUrl}
               alt="Picture of me"
             />
           </div>
+          {/* </div> */}
         </div>
       </div>
     </section>

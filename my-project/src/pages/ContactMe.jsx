@@ -43,7 +43,10 @@ export default function ContactMe() {
             Contact Me
           </h1>
           <div className="bg-main p-12 rounded-xl">
-            <a href="mailto:luismolinuevo0@gmail.com" className="text-[20px] md:text-[30px]">
+            <a
+              href="mailto:luismolinuevo0@gmail.com"
+              className="text-[20px] md:text-[30px]"
+            >
               luismolinuevo0@gmail.com
             </a>
             <div className="flex justify-center">
@@ -106,13 +109,13 @@ export default function ContactMe() {
                 <input
                   type="submit"
                   value="Send"
-                  className="my-2 bg-white md:w-[200px] p-[7px]"
+                  className="my-2 bg-white md:w-[200px] p-[7px] cursor-pointer"
                 />
               </div>
             </form>
 
-            {/* {isGood ? <div>Success!</div> : ""}
-          {isError ? <div>Error</div> : ""} */}
+            {isGood ? <div>Success!</div> : ""}
+            {isError ? <div>Error</div> : ""}
           </div>
         </div>
       </div>
