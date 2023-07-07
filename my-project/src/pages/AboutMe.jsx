@@ -3,7 +3,7 @@ import ImageUrl from "../assets/ImageUrl.png";
 
 export default function AboutMe() {
   return (
-    <section className="px-[50px] py-6 md:px-[80px]" id="aboutme">
+    <section className="px-[50px] py-7 md:px-[80px]" id="aboutme">
       <h1 className="flex justify-center text-main text-modileHeading md:text-heading font-bold py-6 ">
         About me
       </h1>

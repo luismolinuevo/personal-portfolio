@@ -14,9 +14,10 @@ export default function Navbar() {
 
   return (
     <header
-      className={`w-full px-[50px] py-6 md:px-[80px] ${
+      className={`w-full px-[50px] py-7 md:px-[80px]  ${
         openNav ? "bg-main h-screen" : ""
       }`}
+      id="top"
     >
       <nav className="flex justify-between">
         <a className="cursor-pointer"><h1 className={`text-[40px] ${openNav ? "hidden" : ""}`}><span className="text-main">Moli</span>nuevo</h1></a>
@@ -30,7 +31,7 @@ export default function Navbar() {
               openNav ? "flex flex-col text-center text-[20px] text-black" : "hidden"
             }`}
           >
-            <a className="text-main cursor-pointer" onClick={() => setOpenNav(false)}>
+            <a className="text-main cursor-pointer" href="#top" onClick={() => setOpenNav(false)}>
               <li>Home</li>
             </a>
             <a className="cursor-pointer" href="#aboutme" onClick={() => setOpenNav(false)}>
@@ -39,7 +40,7 @@ export default function Navbar() {
             <a className="cursor-pointer" href="#skills" onClick={() => setOpenNav(false)}>
               <li>Skills</li>
             </a>
-            <a className="cursor-pointer" onClick={() => setOpenNav(false)}>
+            <a className="cursor-pointer" href="#projects" onClick={() => setOpenNav(false)}>
               <li>Projects</li>
             </a>
             <a className="bg-main p-2 cursor-pointer text-white shadow-2xl" onClick={() => setOpenNav(false)}>

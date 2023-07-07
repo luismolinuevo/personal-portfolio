@@ -13,9 +13,8 @@ const ImageCard = ({ imageUrl, about, id, title, gitHub, liveLink, stack }) => {
   };
 
   return (
-    // <div className="flex justify-center">
     <div
-      className="relative w-full md:w-[420px] h-[450px] md:h-[400px] bg-cover bg-center rounded-lg overflow-hidden"
+      className="relative w-full md:w-[420px] h-[450px] md:h-[400px] bg-cover bg-center rounded-lg overflow-hidden shadow-2xl"
       style={{ backgroundImage: `url(${imageUrl})` }}
       onMouseEnter={handleHover}
       onMouseLeave={handleMouseLeave}
@@ -26,21 +25,20 @@ const ImageCard = ({ imageUrl, about, id, title, gitHub, liveLink, stack }) => {
           <p className="text-center text-lg pb-4">{about}</p>
           <p className="text-white text-center text-xl pb-4">{stack}</p>
           <div className="flex gap-2">
-            {liveLink != null ? (
-              <a href={gitHub} target="_blank" className="text-[30px]">
+            {liveLink && (
+              <a href={liveLink} target="_blank" rel="noopener noreferrer" className="text-[30px]">
                 <BsGlobe />
               </a>
-            ) : (
-              <p></p>
             )}
-            <a href={liveLink} target="_blank" className="text-[30px]">
-              <BsGithub />
-            </a>
+            {gitHub && (
+              <a href={gitHub} target="_blank" rel="noopener noreferrer" className="text-[30px]">
+                <BsGithub />
+              </a>
+            )}
           </div>
         </div>
       )}
     </div>
-    // </div>
   );
 };
 
