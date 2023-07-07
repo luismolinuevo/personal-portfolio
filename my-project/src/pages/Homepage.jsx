@@ -5,7 +5,7 @@ import Resume from "../assets/Resume.pdf";
 
 export default function Homepage() {
   return (
-    <section className="w-full h-screen px-[50px] py-24 md:px-[80px] md:flex justify-center" id="home">
+    <section className="w-full h-screen px-[50px] py-28 md:px-[80px] md:flex justify-center" id="home">
       <div>
 
       {/* <div className="">

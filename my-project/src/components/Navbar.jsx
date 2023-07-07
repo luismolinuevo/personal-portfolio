@@ -31,7 +31,7 @@ export default function Navbar() {
       <nav className="flex justify-between">
         <a className="cursor-pointer pr-4">
           <h1 className={`text-[40px] ${openNav ? "hidden" : ""}`}>
-            <span className={`text-main ${isScrolled ? "text-white" : ""}`}>Moli</span>nuevo
+            <span className={`text-main`}>Moli</span><span className={`${isScrolled ? "text-white" : ""}`}>nuevo</span>
           </h1>
         </a>
         <div
@@ -42,10 +42,10 @@ export default function Navbar() {
           <ul
             className={`md:flex gap-6 md:text-[23px] md:items-center ${
               openNav ? "flex flex-col text-center text-[20px] text-black" : "hidden"
-            }`}
+            } ${isScrolled ? "text-white" : ""}`}
           >
             <a
-              className={`text-main cursor-pointer ${isScrolled ? "text-white" : ""}`}
+              className={`text-main cursor-pointer`}
               href="#home"
               onClick={() => setOpenNav(false)}
             >
@@ -82,7 +82,7 @@ export default function Navbar() {
           </ul>
         </div>
         <button
-          className={`md:hidden text-[25px] text-main ${openNav ? "hidden" : ""}  ${isScrolled ? "text-white" : ""}`}
+          className={`md:hidden text-[25px] text-main ${openNav ? "hidden" : ""}`}
           onClick={() => setOpenNav(true)}
         >
           <GiHamburgerMenu />
