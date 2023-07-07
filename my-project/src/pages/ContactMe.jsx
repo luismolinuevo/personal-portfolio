@@ -55,6 +55,7 @@ export default function ContactMe() {
                   href="https://www.linkedin.com/in/luismolinuevo/"
                   target="_blank"
                   rel="noopener noreferrer"
+                  title="linkedin"
                 >
                   <li>
                     <FaLinkedin />
@@ -64,6 +65,7 @@ export default function ContactMe() {
                   href="https://github.com/"
                   target="_blank"
                   rel="noopener noreferrer"
+                  title="Github"
                 >
                   <li>
                     <FaGithub />
@@ -73,6 +75,7 @@ export default function ContactMe() {
                   href="https://www.youtube.com/channel/UCRc-HqHUwj3obUnh4--flGQ"
                   target="_blank"
                   rel="noopener noreferrer"
+                  title="Youtube"
                 >
                   <li>
                     <FaYoutube />

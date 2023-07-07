@@ -78,6 +78,7 @@ export default function Homepage() {
               href="https://github.com/luismolinuevo"
               target="_blank"
               className="cursor-pointer"
+              title="github"
             >
               <BsGithub />
             </a>
@@ -85,10 +86,11 @@ export default function Homepage() {
               href="https://www.linkedin.com/in/luismolinuevo/"
               target="_blank"
               className="cursor-pointer"
+              title="linkedin"
             >
               <BsLinkedin />
             </a>
-            <a href={Resume} target="blank_" className="cursor-pointer">
+            <a href={Resume} target="blank_" className="cursor-pointer" title="Resume">
               <BsFillFileEarmarkFill />
             </a>
           </div>

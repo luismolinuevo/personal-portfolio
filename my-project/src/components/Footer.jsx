@@ -16,6 +16,7 @@ export default function Footer() {
             href="https://github.com/luismolinuevo"
             target="_blank"
             className="cursor-pointer text-[30px]"
+            title="github"
           >
             <BsGithub />
           </a>
@@ -23,6 +24,7 @@ export default function Footer() {
             href="https://www.linkedin.com/in/luismolinuevo/"
             target="_blank"
             className="cursor-pointer text-[30px]"
+            title="linkedin"
           >
             <BsLinkedin />
           </a>
@@ -30,6 +32,7 @@ export default function Footer() {
             href="https://www.youtube.com/@luiscodes5533"
             target="_blank"
             className="cursor-pointer text-[30px]"
+            title="youtube"
           >
             <BsYoutube />
           </a>
@@ -37,6 +40,7 @@ export default function Footer() {
             href={Resume}
             target="blank_"
             className="cursor-pointer  text-[30px]"
+            title="resume"
           >
             <BsFillFileEarmarkFill />
           </a>
