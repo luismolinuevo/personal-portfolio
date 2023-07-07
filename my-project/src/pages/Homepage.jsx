@@ -94,10 +94,30 @@ export default function Homepage() {
           </div>
         </motion.div>
       </aside>
-      <div className="flex justify-center gap-2 mt-4">
+      {/* <div className="flex justify-center gap-2 mt-4">
         <a href="#projects" className="bg-main text-white p-2 md:p-3 text-xl">My work</a>
         <a href="#contactme" className="border-2 border-main p-2 md:p-3 text-main text-xl">Hire Me!</a>
-      </div>
+      </div> */}
+       <div className="flex justify-center gap-2 mt-4">
+          <motion.a
+            href="#projects"
+            className="bg-main text-white p-2 md:p-3 text-xl"
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 1.4 }}
+          >
+            My work
+          </motion.a>
+          <motion.a
+            href="#contactme"
+            className="border-2 border-main p-2 md:p-3 text-main text-xl"
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 1.6 }}
+          >
+            Hire Me!
+          </motion.a>
+        </div>
 
 
       </div>
