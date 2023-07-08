@@ -19,7 +19,7 @@ import {
 
 export default function Skills() {
   return (
-    <section className="px-[50px] py-7 md:px-[80px]" id="skills">
+    <section className="px-[50px] py-20 md:px-[80px]" id="skills">
       <div>
         <h1 className="flex justify-center text-main text-modileHeading md:text-heading font-bold py-6">
           Skills

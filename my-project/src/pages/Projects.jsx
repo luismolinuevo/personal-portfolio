@@ -4,7 +4,7 @@ import projects from "../Projects";
 
 export default function Projects() {
   return (
-    <section className=" py-7 md:px-[80px]" id="projects">
+    <section className=" py-20 md:px-[80px]" id="projects">
       <div>
       <h1 className="flex justify-center text-main text-modileHeading md:text-heading font-bold py-6">
           Projects

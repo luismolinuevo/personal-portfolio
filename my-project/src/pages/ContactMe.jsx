@@ -36,7 +36,7 @@ export default function ContactMe() {
   };
 
   return (
-    <section className="px-[50px] py-7 md:px-[80px] mb-[70px]" id="contactme">
+    <section className="px-[50px] py-20 md:px-[80px] mb-[70px]" id="contactme">
       <div className="flex justify-center text-center">
         <div className="flex flex-col">
           <h1 className="flex justify-center text-main text-modileHeading md:text-heading font-bold py-6 ">
