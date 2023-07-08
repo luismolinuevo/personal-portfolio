@@ -40,7 +40,7 @@ export default function Navbar() {
           } `}
         >
           <ul
-            className={`md:flex gap-6 md:text-[23px] md:items-center ${
+            className={`lg:flex gap-6 md:text-[23px] md:items-center ${
               openNav ? "flex flex-col text-center text-[20px] text-black" : "hidden"
             } ${isScrolled ? "text-white" : ""}`}
           >
@@ -82,7 +82,7 @@ export default function Navbar() {
           </ul>
         </div>
         <button
-          className={`md:hidden text-[25px] text-main ${openNav ? "hidden" : ""}`}
+          className={`lg:hidden text-[25px] text-main ${openNav ? "hidden" : ""}`}
           onClick={() => setOpenNav(true)}
         >
           <GiHamburgerMenu />
