@@ -2,11 +2,12 @@ import React from "react";
 import { motion } from "framer-motion";
 import { BsGithub, BsLinkedin, BsFillFileEarmarkFill } from "react-icons/bs";
 import Resume from "../assets/Resume.pdf";
+import RainCloud from "../components/Cloud";
 
 export default function Homepage() {
   return (
     <section
-      className="w-full h-screen px-[50px] py-28 md:px-[80px] md:flex justify-center"
+      className="w-full h-screen px-[50px] py-28 md:px-[80px] md:flex justify-center block"
       id="home"
     >
       <div>
@@ -117,6 +118,7 @@ export default function Homepage() {
           </motion.a>
         </div>
       </div>
+      {/* <RainCloud/> */}
     </section>
   );
 }
