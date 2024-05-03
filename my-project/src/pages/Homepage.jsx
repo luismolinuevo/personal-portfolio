@@ -7,7 +7,7 @@ import RainCloud from "../components/Cloud";
 export default function Homepage() {
   return (
     <section
-      className="w-full h-screen px-[50px] py-28 md:px-[80px] md:flex justify-center block"
+      className="w-full h-screen px-[50px] md:px-[80px] md:flex justify-center block"
       id="home"
     >
       <div>

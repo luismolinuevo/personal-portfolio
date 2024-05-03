@@ -23,10 +23,11 @@ export default function Navbar() {
 
   return (
     <header
-      className={`w-full px-[50px] py-7 md:px-[80px] text-center fixed z-10 ${
+      className={`w-full px-[50px] py-7 md:px-[80px] text-center fixed z-10 block ${
         openNav ? "bg-main h-screen" : isScrolled ? "bg-gray-800 bg-opacity-80" : ""
       }`}
       id="top"
+      style={{ position: isScrolled ? "sticky" : "static", top: 0 }}
     >
       <nav className="flex justify-between">
         <a className="cursor-pointer pr-4">
