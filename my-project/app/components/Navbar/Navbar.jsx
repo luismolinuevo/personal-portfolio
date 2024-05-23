@@ -1,7 +1,8 @@
-"use client"
+"use client";
 
 import React, { useState, useEffect } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
+import LightModeDarkModeButton from "./LightModeDarkModeButton";
 
 export default function Navbar() {
   const [openNav, setOpenNav] = useState(false);
@@ -26,7 +27,11 @@ export default function Navbar() {
   return (
     <header
       className={`w-full px-[50px] py-7 md:px-[80px] text-center fixed z-10 block ${
-        openNav ? "bg-main h-screen" : isScrolled ? "bg-gray-800 bg-opacity-80" : ""
+        openNav
+          ? "bg-main h-screen"
+          : isScrolled
+          ? "bg-gray-800 bg-opacity-80"
+          : ""
       }`}
       id="top"
       style={{ position: isScrolled ? "sticky" : "static", top: 0 }}
@@ -34,7 +39,8 @@ export default function Navbar() {
       <nav className="flex justify-between">
         <a className="cursor-pointer pr-4">
           <h1 className={`text-[40px] ${openNav ? "hidden" : ""}`}>
-            <span className={`text-main`}>Moli</span><span className={`${isScrolled ? "text-white" : ""}`}>nuevo</span>
+            <span className={`text-main`}>Moli</span>
+            <span className={`${isScrolled ? "text-white" : ""}`}>nuevo</span>
           </h1>
         </a>
         <div
@@ -44,7 +50,9 @@ export default function Navbar() {
         >
           <ul
             className={`lg:flex gap-6 md:text-[23px] md:items-center ${
-              openNav ? "flex flex-col text-center text-[20px] text-black" : "hidden"
+              openNav
+                ? "flex flex-col text-center text-[20px] text-black"
+                : "hidden"
             } ${isScrolled ? "text-white" : ""}`}
           >
             <a
@@ -82,10 +90,14 @@ export default function Navbar() {
             >
               <li>Contact Me</li>
             </a>
+            <LightModeDarkModeButton />
           </ul>
         </div>
+
         <button
-          className={`lg:hidden text-[25px] text-main ${openNav ? "hidden" : ""}`}
+          className={`lg:hidden text-[25px] text-main ${
+            openNav ? "hidden" : ""
+          }`}
           onClick={() => setOpenNav(true)}
         >
           <GiHamburgerMenu />
