@@ -31,11 +31,11 @@ export default function Skills() {
         <div className="text-[18px] md:text-[20px] flex justify-center">
           <div className="flex flex-wrap w-full md:w-[800px] gap-3 md:gap-6 justify-center">
           <div className="text-center">
-            <FaReact className="text-[50px]"/>
+            <FaReact className="m-auto text-[50px]"/>
             <p className="text-center">React.js</p>
           </div>
           <div className="text-center">
-            <SiNextdotjs className="text-[50px]"/>
+            <SiNextdotjs className="m-auto text-[50px]"/>
             <p className="text-center">Next.js</p>
           </div>
           <div>
