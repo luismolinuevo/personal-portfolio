@@ -1,18 +1,18 @@
-"use client"
+"use client";
 
 import React from "react";
 import { motion } from "framer-motion";
-// import { BsGithub, BsLinkedin, BsFillFileEarmarkFill } from "react-icons/bs";
+import { BsGithub, BsLinkedin, BsFillFileEarmarkFill } from "react-icons/bs";
 // import Resume from "../assets/Resume.pdf";
 
 export default function Homepage() {
   return (
     <section
-      className="w-full h-screen px-[50px] md:px-[80px] md:flex block"
+      className="w-full h-screen px-[50px] md:px-[80px] md:flex block justify-evenly "
       id="home"
     >
       <div>
-        <main className="w-full flex justify-center pt-[40px] md:pt-[150px]">
+        <main className="w-full flex justify-center  pt-[40px] md:pt-[150px]">
           <div className="flex flex-col">
             <motion.h1
               className="text-[40px] text-main"
@@ -44,11 +44,13 @@ export default function Homepage() {
               initial={{ y: -100 }}
               transition={{ duration: 0.7, delay: 0.8 }}
             >
-              Im a Full Stack Software Engineer with a passion for web development.Welcome to my corner of the internet. Happy to have you here.
+              Im a Full Stack Software Engineer with a passion for web
+              development.Welcome to my corner of the internet. Happy to have
+              you here.
             </motion.h4>
           </div>
         </main>
-        {/* <aside className="hidden md:flex flex-col absolute top-[350px] right-12">
+        <aside className="hidden md:flex flex-col absolute top-[350px] right-12">
           <motion.div
             className="flex flex-col items-center justify-center"
             initial={{ y: -100, opacity: 0 }}
@@ -84,7 +86,7 @@ export default function Homepage() {
               </a>
             </div>
           </motion.div>
-        </aside> */}
+        </aside>
         <div className="flex  gap-2 mt-4">
           <motion.a
             href="#projects"
@@ -119,6 +121,13 @@ export default function Homepage() {
           </motion.a>
         </div>
       </div>
+      <motion.img
+        src="/landingpage.png"
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 1.6 }}
+        className="w-[575px] h-[575px] mt-6"
+      />
       {/* <RainCloud/> */}
     </section>
   );
