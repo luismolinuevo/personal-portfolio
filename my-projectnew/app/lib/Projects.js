@@ -1,7 +1,3 @@
-// import TechNiche from './assets/techniche.png';
-// import WorkoutApp from "./assets/WorkoutGif.gif";
-// import JournalApp from "./assets/JournalGif.gif";
-
 const projects = [
     {
        id: 1,
@@ -10,7 +6,8 @@ const projects = [
        gitHub: "https://github.com/luismolinuevo/digitaldish",
        live: "https://digitaldish.vercel.app/",
        techStack: "React.js, Tailwind, Redux, Express, Prisma, MySQL, Cloudinary, Socket.io",
-       img: "/techniche.png"
+       img: "/techniche.png",
+       status: 'completed'
     },
     {
         id: 2,
@@ -19,7 +16,8 @@ const projects = [
         gitHub: "https://github.com/luismolinuevo/shoppingcart",
         live: "https://shoppingcart-nu-liart.vercel.app/",
         techStack: "React.js, TailwindCSS, Redux Tool Kit",
-        img: "/ShoppingCart.png"
+        img: "/ShoppingCart.png",
+        status: 'completed'
     },
     {
         id: 3,
@@ -28,7 +26,8 @@ const projects = [
         gitHub: "https://github.com/luismolinuevo/workoutappv2",
         live: null,
         techStack: "React.js, CSS, Express, SequelizeORM, PostgreSQL",
-        img: "/WorkoutGif.gif"
+        img: "/WorkoutGif.gif",
+        status: 'completed'
     },
     // {
 
