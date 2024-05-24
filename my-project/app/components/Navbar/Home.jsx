@@ -15,7 +15,7 @@ export default function Homepage() {
         <main className="w-full flex justify-center  pt-[40px] md:pt-[150px]">
           <div className="flex flex-col">
             <motion.h1
-              className="text-[40px] text-main"
+              className="text-[35px] text-main"
               animate={{ y: 0 }}
               initial={{ y: -100 }}
               transition={{ duration: 0.7, delay: 0.2 }}
@@ -50,7 +50,7 @@ export default function Homepage() {
             </motion.h4>
           </div>
         </main>
-        <aside className="hidden md:flex flex-col absolute top-[350px] right-12">
+        {/* <aside className="hidden md:flex flex-col absolute top-[350px] right-12">
           <motion.div
             className="flex flex-col items-center justify-center"
             initial={{ y: -100, opacity: 0 }}
@@ -86,8 +86,8 @@ export default function Homepage() {
               </a>
             </div>
           </motion.div>
-        </aside>
-        <div className="flex  gap-2 mt-4">
+        </aside> */}
+        <div className="flex gap-2 mt-4">
           <motion.a
             href="#projects"
             className="bg-main text-white p-2 md:p-3 text-xl cursor-pointer"
@@ -107,18 +107,45 @@ export default function Homepage() {
             Hire Me!
           </motion.a>
         </div>
-        <div className="flex pt-2">
-          <motion.a
-            href={"/Resume.pdf"}
-            target="blank_"
-            title="Resume"
-            className="border-2 border-main p-2 md:p-3 text-main text-xl cursor-pointer"
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 1.8 }}
-          >
-            Resume
-          </motion.a>
+    
+        <div className="flex gap-2">
+          <div className="flex pt-2">
+            <motion.a
+              href={"/Resume.pdf"}
+              target="blank_"
+              title="Resume"
+              className="border-2 border-main p-2 md:p-3 text-main text-xl cursor-pointer"
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 1.8 }}
+            >
+              Resume
+            </motion.a>
+          </div>
+          <div className="flex text-main text-[25px] text-center items-center gap-2">
+            <motion.a
+              href="https://github.com/luismolinuevo"
+              target="_blank"
+              className="cursor-pointer"
+              title="github"
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 2.1 }}
+            >
+              <BsGithub />
+            </motion.a>
+            <motion.a
+              href="https://www.linkedin.com/in/luismolinuevo/"
+              target="_blank"
+              className="cursor-pointer"
+              title="linkedin"
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 2.2 }}
+            >
+              <BsLinkedin />
+            </motion.a>
+          </div>
         </div>
       </div>
       <motion.img
@@ -126,7 +153,7 @@ export default function Homepage() {
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 1.6 }}
-        className="w-[575px] h-[575px] mt-6"
+        className="w-[575px] h-[575px] mt-6 hidden 2xl:block"
       />
       {/* <RainCloud/> */}
     </section>
