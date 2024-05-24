@@ -2,17 +2,17 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { BsGithub, BsLinkedin, BsFillFileEarmarkFill } from "react-icons/bs";
+// import { BsGithub, BsLinkedin, BsFillFileEarmarkFill } from "react-icons/bs";
 // import Resume from "../assets/Resume.pdf";
 
 export default function Homepage() {
   return (
     <section
-      className="w-full h-screen px-[50px] md:px-[80px] md:flex justify-center block"
+      className="w-full h-screen px-[50px] md:px-[80px] md:flex block"
       id="home"
     >
       <div>
-        <main className="w-full flex justify-center text-center pt-[40px] md:pt-[125px]">
+        <main className="w-full flex justify-center pt-[40px] md:pt-[150px]">
           <div className="flex flex-col">
             <motion.h1
               className="text-[40px] text-main"
@@ -20,7 +20,7 @@ export default function Homepage() {
               initial={{ y: -100 }}
               transition={{ duration: 0.7, delay: 0.2 }}
             >
-              Hello!
+              Hello There!
             </motion.h1>
             <motion.h2
               className="text-[65px]"
@@ -28,27 +28,27 @@ export default function Homepage() {
               initial={{ y: -100 }}
               transition={{ duration: 0.7, delay: 0.4 }}
             >
-              Im Luis
+              Im Luis Molinuevo
             </motion.h2>
-            <motion.h3
+            {/* <motion.h3
               className="text-[65px]"
               animate={{ y: 0 }}
               initial={{ y: -100 }}
               transition={{ duration: 0.7, delay: 0.6 }}
             >
               <span className="text-main">Moli</span>nuevo
-            </motion.h3>
+            </motion.h3> */}
             <motion.h4
-              className="text-[35px]"
+              className="text-[20px] sm:text-[23px] sm:w-[400px] md:w-[600px] lg:w-[800px]"
               animate={{ y: 0 }}
               initial={{ y: -100 }}
               transition={{ duration: 0.7, delay: 0.8 }}
             >
-              Full Stack Web Developer
+              Im a Full Stack Software Engineer with a passion for web development.Welcome to my corner of the internet. Happy to have you here.
             </motion.h4>
           </div>
         </main>
-        <aside className="hidden md:flex flex-col absolute top-[350px] right-12">
+        {/* <aside className="hidden md:flex flex-col absolute top-[350px] right-12">
           <motion.div
             className="flex flex-col items-center justify-center"
             initial={{ y: -100, opacity: 0 }}
@@ -84,8 +84,8 @@ export default function Homepage() {
               </a>
             </div>
           </motion.div>
-        </aside>
-        <div className="flex justify-center gap-2 mt-4">
+        </aside> */}
+        <div className="flex  gap-2 mt-4">
           <motion.a
             href="#projects"
             className="bg-main text-white p-2 md:p-3 text-xl cursor-pointer"
@@ -105,7 +105,7 @@ export default function Homepage() {
             Hire Me!
           </motion.a>
         </div>
-        <div className="flex justify-center pt-2">
+        <div className="flex pt-2">
           <motion.a
             href={"/Resume.pdf"}
             target="blank_"
