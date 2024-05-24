@@ -12,7 +12,7 @@ export default function Homepage() {
       id="home"
     >
       <div>
-        <main className="w-full flex justify-center  pt-[40px] md:pt-[150px]">
+        <main className="w-full flex justify-center  pt-[40px] sm:[60px] md:pt-[160px]">
           <div className="flex flex-col">
             <motion.h1
               className="text-[35px] text-main"
@@ -89,25 +89,25 @@ export default function Homepage() {
         </aside> */}
         <div className="flex gap-2 mt-4">
           <motion.a
-            href="#projects"
-            className="bg-main text-white p-2 md:p-3 text-xl cursor-pointer"
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 1.4 }}
-          >
-            My work
-          </motion.a>
-          <motion.a
             href="#contactme"
-            className="border-2 border-main p-2 md:p-3 text-main text-xl cursor-pointer"
+            className="bg-main text-white p-2 md:p-3 text-xl cursor-pointer"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 1.6 }}
           >
             Hire Me!
           </motion.a>
+          <motion.a
+            href="#projects"
+            className="border-2 border-main p-2 md:p-3 text-main text-xl cursor-pointer"
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 1.4 }}
+          >
+            My work
+          </motion.a>
         </div>
-    
+
         <div className="flex gap-2">
           <div className="flex pt-2">
             <motion.a
@@ -153,7 +153,7 @@ export default function Homepage() {
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 1.6 }}
-        className="w-[575px] h-[575px] mt-6 hidden 2xl:block"
+        className="w-[575px] h-[575px] mt-10 hidden 2xl:block"
       />
       {/* <RainCloud/> */}
     </section>
