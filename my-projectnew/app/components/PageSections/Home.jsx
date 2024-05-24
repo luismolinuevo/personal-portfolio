@@ -3,12 +3,14 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { BsGithub, BsLinkedin, BsFillFileEarmarkFill } from "react-icons/bs";
+import { FiCloud,FiCircle, FiHexagon } from "react-icons/fi";
+import  "./test.css"
 // import Resume from "../assets/Resume.pdf";
 
 export default function Homepage() {
   return (
     <section
-      className="w-full h-screen px-[50px] md:px-[80px] md:flex block justify-evenly "
+      className="w-full h-screen px-[50px] md:px-[80px] md:flex block justify-evenly"
       id="home"
     >
       <div>
@@ -122,6 +124,11 @@ export default function Homepage() {
               Resume
             </motion.a>
           </div>
+          <FiCircle
+        size={30}
+        className="absolute bottom-20  left-16 hidden animate-bounce text-amber-500 sm:inline-block md:left-40"
+      />
+      {/* <FiHexagon size={30} className="absolute top-100 left-1/4 hidden animate-spin text-purple-500 sm:inline-block" /> */}
           <div className="flex text-main text-[25px] text-center items-center gap-2">
             <motion.a
               href="https://github.com/luismolinuevo"
@@ -155,7 +162,20 @@ export default function Homepage() {
         transition={{ duration: 0.5, delay: 1.6 }}
         className="w-[575px] h-[575px] mt-10 hidden 2xl:block"
       />
+      <FiCloud size={30} className="absolute bottom-48 left-2/3 hidden animate-pulse text-blue-500 sm:inline-block" />
       {/* <RainCloud/> */}
+      <ul className={'circles'}>
+        <li className="bg-primary-300"></li>
+        <li className="bg-purple-300"></li>
+        <li className="bg-indigo-300"></li>
+        <li className="bg-emerald-300"></li>
+        <li className="bg-teal-300"></li>
+        <li className="bg-pink-300"></li>
+        <li className="bg-blue-300"></li>
+        <li className="bg-orange-300"></li>
+        <li className="bg-yellow-300"></li>
+        <li className="bg-gray-200 dark:bg-gray-700"></li>
+      </ul>
     </section>
   );
 }

@@ -13,7 +13,7 @@ export default function AboutMe() {
               Hello!
             </h1>
             <p className="w-full lg:w-[500px] xl:w-[700px] text-[20px] md:text-[24px] md:leading-8">
-              I'm Luis Molinuevo, a Software Engineer fueled by a passion for
+              I'm Luis Molinuevo, a Fullstack Engineer fueled by a passion for
               problem-solving. With a Bachelor of Science in Computer Science
               from Lehman College and experience from The Knowledge House and
               CUNY Tech Prep web developement fellowships, I excel in full-stack
@@ -28,12 +28,17 @@ export default function AboutMe() {
             </p>
           </div>
           <div className="flex justify-center items-center lg:justify-end">
-            <div className="w-72 h-72 2l:w-80 2l:h-80 rounded-full overflow-hidden border-4 border-main shadow-2xl mt-8 md:mt-0">
-              <img
-                className="w-full h-full object-center object-cover"
-                src={"/ImageUrl.png"}
-                alt="Picture of me"
-              />
+            <div className="flex-col">
+              <div className="w-72 h-72 2l:w-80 2l:h-80 rounded-full overflow-hidden border-4 border-main shadow-2xl mt-8 md:mt-0">
+                <img
+                  className="w-full h-full object-center object-cover"
+                  src={"/ImageUrl.png"}
+                  alt="Picture of me"
+                />
+              </div>
+              <div className="flex justify-center mt-3">
+                <button>Ask chabot about me</button>
+              </div>
             </div>
           </div>
         </div>

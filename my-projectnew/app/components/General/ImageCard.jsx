@@ -1,3 +1,5 @@
+"use client"
+
 import React, { useState } from "react";
 import { BsGithub, BsGlobe } from "react-icons/bs";
 
