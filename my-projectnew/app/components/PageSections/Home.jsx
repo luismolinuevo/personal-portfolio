@@ -12,7 +12,7 @@ export default function Homepage() {
       id="home"
     >
       <div>
-        <main className="w-full flex justify-center  pt-[40px] sm:[60px] md:pt-[160px]">
+        <main className="w-full flex justify-center pt-[40px] sm:[60px] md:pt-[160px]">
           <div className="flex flex-col">
             <motion.h1
               className="text-[35px] text-main"
@@ -39,7 +39,7 @@ export default function Homepage() {
               <span className="text-main">Moli</span>nuevo
             </motion.h3> */}
             <motion.h4
-              className="text-[20px] sm:text-[23px] sm:w-[400px] md:w-[600px] lg:w-[800px]"
+              className="text-[20px] sm:text-[23px] md:text-[26px] sm:w-[400px] md:w-[600px] lg:w-[800px]"
               animate={{ y: 0 }}
               initial={{ y: -100 }}
               transition={{ duration: 0.7, delay: 0.8 }}
