@@ -1,15 +1,22 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { MdOutlineLightMode, MdDarkMode } from "react-icons/md";
 
 export default function LightModeDarkModeButton() {
   const [darkMode, setDarkMode] = useState(false);
 
+  useEffect(() => {
+    const savedMode = localStorage.getItem("darkMode") === "true";
+    setDarkMode(savedMode);
+  }, []);
+
   const handleClick = () => {
-    setDarkMode(!darkMode);
-    // localStorage.set("darkMode", darkMode)
-  }
+    const newDarkMode = !darkMode;
+    setDarkMode(newDarkMode);
+    localStorage.setItem("darkMode", newDarkMode);
+  };
+
   return (
     <div>
       {darkMode ? (
