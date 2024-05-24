@@ -1,8 +1,9 @@
+"use client"
+
 import React from "react";
 import { motion } from "framer-motion";
 import { BsGithub, BsLinkedin, BsFillFileEarmarkFill } from "react-icons/bs";
-import Resume from "../assets/Resume.pdf";
-import RainCloud from "../components/Cloud";
+// import Resume from "../assets/Resume.pdf";
 
 export default function Homepage() {
   return (
@@ -74,7 +75,7 @@ export default function Homepage() {
                 <BsLinkedin />
               </a>
               <a
-                href={Resume}
+                href={"/Resume.pdf"}
                 target="blank_"
                 className="cursor-pointer"
                 title="Resume"
@@ -106,7 +107,7 @@ export default function Homepage() {
         </div>
         <div className="flex justify-center pt-2">
           <motion.a
-            href={Resume}
+            href={"/Resume.pdf"}
             target="blank_"
             title="Resume"
             className="border-2 border-main p-2 md:p-3 text-main text-xl cursor-pointer"
