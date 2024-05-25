@@ -5,9 +5,11 @@
 .light {
     --background: #e5e5e5;
     --text-primary: black;
+    --text-secondary: black;
 }
 
 .dark {
     --background: #202c34;
     --text-primary: white;
+    --text-secondary: black;
 }

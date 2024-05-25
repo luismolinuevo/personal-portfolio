@@ -10,6 +10,7 @@ module.exports = {
       colors: {
         main: "#05aff2",
         primary: "var(--text-primary)",
+        secondary: "var(--text-secondary)",
         background: "var(--background)"
       },
       fontSize: {
