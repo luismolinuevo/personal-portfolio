@@ -9,6 +9,8 @@ module.exports = {
     extend: {
       colors: {
         main: "#05aff2",
+        primary: "var(--text-primary)",
+        background: "var(--background)"
       },
       fontSize: {
         heading: "50px",

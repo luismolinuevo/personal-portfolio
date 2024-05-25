@@ -26,7 +26,7 @@ export default function Navbar() {
 
   return (
     <header
-      className={`w-full px-[50px] py-7 md:px-[80px] text-center fixed z-10 block ${
+      className={`w-full px-[50px] py-7 md:px-[80px] text-center fixed z-20 block ${
         openNav
           ? "bg-main h-screen"
           : isScrolled
