@@ -95,7 +95,7 @@ export default function Navbar() {
         </div>
 
         <button
-          className={`lg:hidden text-[25px] text-main ${
+          className={`lg:hidden text-[25px] text-main z-30 ${
             openNav ? "hidden" : ""
           }`}
           onClick={() => setOpenNav(true)}
@@ -103,7 +103,7 @@ export default function Navbar() {
           <GiHamburgerMenu />
         </button>
         {openNav ? (
-          <div className="absolute top-0 right-0 pr-8">
+          <div className="absolute top-0 right-0 pr-8 z-30">
             <button
               className={`text-[25px] text-white pt-6`}
               onClick={() => setOpenNav(!openNav)}
