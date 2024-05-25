@@ -31,11 +31,11 @@ export default function LightModeDarkModeButton() {
   };
 
   return (
-    <button onClick={handleClick} className="cursor-pointer z-30">
+    <button onClick={handleClick} className="cursor-pointer z-30" title="lightmode/darkmode">
       {darkMode ? (
-        <MdDarkMode className="text-main cursor-pointer text-[30px]" />
+        <MdDarkMode className="text-main cursor-pointer text-[25px] lg:text-[30px]" />
       ) : (
-        <MdOutlineLightMode className="text-main cursor-pointer text-[30px]" />
+        <MdOutlineLightMode className="text-main cursor-pointer text-[25px] lg:text-[30px]" />
       )}
     </button>
   );

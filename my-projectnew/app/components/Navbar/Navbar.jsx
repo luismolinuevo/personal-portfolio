@@ -90,8 +90,15 @@ export default function Navbar() {
             >
               <li>Contact Me</li>
             </a>
-            <LightModeDarkModeButton />
+            <div className="hidden lg:block z-30">
+              <LightModeDarkModeButton />
+            </div>
           </ul>
+        </div>
+
+        {/**Lightmode darkmode on mobile */}
+        <div className="flex items-center lg:hidden z-30">
+          <LightModeDarkModeButton />
         </div>
 
         <button

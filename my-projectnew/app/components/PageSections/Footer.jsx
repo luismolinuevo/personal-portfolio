@@ -3,7 +3,6 @@ import {
   BsGithub,
   BsLinkedin,
   BsFillFileEarmarkFill,
-  BsYoutube,
 } from "react-icons/bs";
 
 export default function Footer() {
@@ -28,14 +27,6 @@ export default function Footer() {
             <BsLinkedin />
           </a>
           <a
-            href="https://www.youtube.com/@luiscodes5533"
-            target="_blank"
-            className="cursor-pointer text-[30px]"
-            title="youtube"
-          >
-            <BsYoutube />
-          </a>
-          <a
             href={"/Resume.pdf"}
             target="blank_"
             className="cursor-pointer  text-[30px]"
@@ -44,7 +35,7 @@ export default function Footer() {
             <BsFillFileEarmarkFill />
           </a>
         </div>
-        <p className="text-center  text-[20px]">@ Luis Molinuevo 2024</p>
+        <p className="text-center  text-[20px]">CopyRight @ Luis Molinuevo 2024</p>
       </div>
     </footer>
   );
