@@ -7,7 +7,7 @@ const projects = [
        live: "https://digitaldish.vercel.app/",
        techStack: "React.js, Tailwind, Redux, Express, Prisma, MySQL, Cloudinary, Socket.io",
        img: "/techniche.png",
-       status: 'completed'
+       status: 'Completed'
     },
     {
         id: 2,
@@ -17,7 +17,7 @@ const projects = [
         live: "https://shoppingcart-nu-liart.vercel.app/",
         techStack: "React.js, TailwindCSS, Redux Tool Kit",
         img: "/ShoppingCart.png",
-        status: 'completed'
+        status: 'Completed'
     },
     {
         id: 3,
@@ -27,7 +27,7 @@ const projects = [
         live: null,
         techStack: "React.js, CSS, Express, SequelizeORM, PostgreSQL",
         img: "/WorkoutGif.gif",
-        status: 'completed'
+        status: 'Completed'
     },
     // {
 
