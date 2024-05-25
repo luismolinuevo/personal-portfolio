@@ -15,9 +15,10 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         {/* <div className="min-h-screen bg-[#e5e5e5] text-[black] min-h-screen"> */}
-        <div className="bg-background min-h-screen text-primary">
+        <div className="bg-background min-h-screen text-primary flex flex-col">
           <Navbar />
-          {children}
+          {/* {children} */}
+          <main className="flex-grow">{children}</main>
           <Footer />
         </div>
       </body>
