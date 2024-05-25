@@ -5,7 +5,7 @@ import ImageCard from "../General/ImageCard";
 import projects from "@/app/lib/Projects";
 
 export default function Projects() {
-  const [visibleCount, setVisibleCount] = useState(2);
+  const [visibleCount, setVisibleCount] = useState(3);
 
   const loadMoreProjects = () => {
     setVisibleCount((prevCount) => prevCount + 3);

@@ -14,10 +14,10 @@ export default function Homepage() {
       id="home"
     >
       <div>
-        <main className="w-full flex justify-center pt-[40px] sm:[60px] md:pt-[160px]">
+        <main className="w-full flex justify-center pt-[50px] sm:pt-[60px] md:pt-[160px]">
           <div className="flex flex-col">
             <motion.h1
-              className="text-[35px] text-main"
+              className="text-[30px] sm:text-[35px] text-main m-0 leading-tight"
               animate={{ y: 0 }}
               initial={{ y: -100 }}
               transition={{ duration: 0.7, delay: 0.2 }}
@@ -25,12 +25,12 @@ export default function Homepage() {
               Hello There!
             </motion.h1>
             <motion.h2
-              className="text-[65px]"
+              className="text-[60px] sm:text-[65px]  m-0 leading-tight"
               animate={{ y: 0 }}
               initial={{ y: -100 }}
               transition={{ duration: 0.7, delay: 0.4 }}
             >
-              Im Luis Molinuevo
+              I'm Luis <span className="text-main">Moli</span>nuevo
             </motion.h2>
             {/* <motion.h3
               className="text-[65px]"

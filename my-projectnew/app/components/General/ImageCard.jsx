@@ -30,7 +30,7 @@ const ImageCard = ({ imageUrl, about, id, title, gitHub, liveLink, stack }) => {
               <h1 className="text-white text-[30px] font-bold mb-2">{title}</h1>
               <p className="text-center text-lg pb-4">{about}</p>
               <p className="text-white text-center text-xl pb-4">{stack}</p>
-              <div className="flex gap-2">
+              <div className="flex gap-2 flex-wrap justify-center items-center">
                 {liveLink && (
                   <a
                     href={liveLink}
@@ -53,6 +53,7 @@ const ImageCard = ({ imageUrl, about, id, title, gitHub, liveLink, stack }) => {
                     <BsGithub />
                   </a>
                 )}
+                <Link href={`/project/${id}`} className="bold">More Info</Link>
               </div>
             </div>
           )}
