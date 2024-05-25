@@ -37,7 +37,7 @@ export default function AboutMe() {
                 />
               </div>
               <div className="flex justify-center mt-3">
-                <button>Ask chabot about me</button>
+                <button className="border px-3 py-2 rounded-xl bg-main">Ask chatbot about me</button>
               </div>
             </div>
           </div>

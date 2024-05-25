@@ -19,6 +19,7 @@ import {
   SiOpenai,
   SiDocker,
   SiAmazonaws,
+  SiMysql,
 } from "react-icons/si";
 
 export default function Skills() {
@@ -47,6 +48,14 @@ export default function Skills() {
               <p className="text-center">TailwindCSS</p>
             </div>
             <div>
+              <DiHtml5 className="m-auto text-[50px]" />
+              <p className="text-center">HTML</p>
+            </div>
+            <div>
+              <DiCss3 className="m-auto text-[50px]" />
+              <p className="text-center">CSS</p>
+            </div>
+            <div>
               <SiExpress className="m-auto text-[50px]" />
               <p className="text-center">Express</p>
             </div>
@@ -59,8 +68,12 @@ export default function Skills() {
               <p className="text-center">Socket.io</p>
             </div>
             <div>
+              <SiMysql className="m-auto text-[50px]" />
+              <p className="text-center">MySQL</p>
+            </div>
+            <div>
               <DiMongodb className="m-auto text-[50px]" />
-              <p className="text-center">Mongo</p>
+              <p className="text-center">MongoDB</p>
             </div>
             <div>
               <SiPrisma className="m-auto text-[50px]" />
@@ -69,22 +82,6 @@ export default function Skills() {
             <div>
               <SiSequelize className="m-auto text-[50px]" />
               <p className="text-center">Sequelize</p>
-            </div>
-            <div>
-              <DiJavascript1 className="m-auto text-[50px]" />
-              <p className="text-center">JS</p>
-            </div>
-            <div>
-              <DiJava className="m-auto text-[50px]" />
-              <p className="text-center">Java</p>
-            </div>
-            <div>
-              <DiHtml5 className="m-auto text-[50px]" />
-              <p className="text-center">HTML</p>
-            </div>
-            <div>
-              <DiCss3 className="m-auto text-[50px]" />
-              <p className="text-center">CSS</p>
             </div>
             <div>
               <FaGitSquare className="m-auto text-[50px]" />
@@ -101,6 +98,14 @@ export default function Skills() {
             <div>
               <SiAmazonaws className="m-auto text-[50px]" />
               <p className="text-center">AWS</p>
+            </div>
+            <div>
+              <DiJavascript1 className="m-auto text-[50px]" />
+              <p className="text-center">Javascript</p>
+            </div>
+            <div>
+              <DiJava className="m-auto text-[50px]" />
+              <p className="text-center">Java</p>
             </div>
           </div>
         </div>
