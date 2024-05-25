@@ -9,7 +9,7 @@ import  "./test.css"
 export default function Homepage() {
   return (
     <section
-      className="w-full h-screen px-[50px] md:px-[80px] md:flex block justify-evenly"
+      className="w-full h-screen px-[50px] md:px-[80px] md:flex block justify-evenly z-10"
       id="home"
     >
       <div>
