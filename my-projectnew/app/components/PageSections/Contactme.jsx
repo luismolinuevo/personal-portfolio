@@ -80,16 +80,6 @@ export default function ContactMe() {
                     <FaGithub />
                   </li>
                 </a>
-                <a
-                  href="https://www.youtube.com/channel/UCRc-HqHUwj3obUnh4--flGQ"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  title="Youtube"
-                >
-                  <li>
-                    <FaYoutube />
-                  </li>
-                </a>
               </ul>
             </div>
 

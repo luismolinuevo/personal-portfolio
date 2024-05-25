@@ -44,7 +44,7 @@ export default function Footer() {
             <BsFillFileEarmarkFill />
           </a>
         </div>
-        <p className="text-center  text-[20px]">@ Luis Molinuevo 2023</p>
+        <p className="text-center  text-[20px]">@ Luis Molinuevo 2024</p>
       </div>
     </footer>
   );
