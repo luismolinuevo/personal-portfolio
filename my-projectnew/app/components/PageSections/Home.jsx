@@ -46,7 +46,7 @@ export default function Homepage() {
         <div className="flex gap-2 mt-4">
           <motion.a
             href="#contactme"
-            className="bg-main text-white p-2 md:p-3 text-xl cursor-pointer"
+            className="bg-main text-white p-2 md:p-3 text-xl cursor-pointer z-20"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 1.6 }}
@@ -55,7 +55,7 @@ export default function Homepage() {
           </motion.a>
           <motion.a
             href="#projects"
-            className="border-2 border-main p-2 md:p-3 text-main text-xl cursor-pointer"
+            className="border-2 border-main p-2 md:p-3 text-main text-xl cursor-pointer z-20"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 1.4 }}
@@ -70,7 +70,7 @@ export default function Homepage() {
               href={"/Resume.pdf"}
               target="blank_"
               title="Resume"
-              className="border-2 border-main p-2 md:p-3 text-main text-xl cursor-pointer"
+              className="border-2 border-main p-2 md:p-3 text-main text-xl cursor-pointer z-20"
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 1.8 }}
@@ -87,7 +87,7 @@ export default function Homepage() {
             <motion.a
               href="https://github.com/luismolinuevo"
               target="_blank"
-              className="cursor-pointer"
+              className="cursor-pointer z-20"
               title="github"
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
@@ -98,7 +98,7 @@ export default function Homepage() {
             <motion.a
               href="https://www.linkedin.com/in/luismolinuevo/"
               target="_blank"
-              className="cursor-pointer"
+              className="cursor-pointer z-20"
               title="linkedin"
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
