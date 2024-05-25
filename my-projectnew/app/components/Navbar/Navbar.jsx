@@ -36,8 +36,8 @@ export default function Navbar() {
       id="top"
       style={{ position: isScrolled ? "sticky" : "static", top: 0 }}
     >
-      <nav className="flex justify-between">
-        <a className="cursor-pointer pr-4">
+      <nav className="flex justify-between z-20 ">
+        <a className="cursor-pointer pr-4" href="#home">
           <h1 className={`text-[40px] ${openNav ? "hidden" : ""}`}>
             <span className={`text-main`}>Moli</span>
             <span className={`${isScrolled ? "text-white" : ""}`}>nuevo</span>
