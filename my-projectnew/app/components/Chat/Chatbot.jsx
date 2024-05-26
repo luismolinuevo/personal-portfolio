@@ -46,7 +46,7 @@ export default function Chat() {
   };
 
   return (
-    <div className="fixed bottom-10 right-10 z-50 ">
+    <div className="fixed bottom-5 sm:bottom-10 right-0 sm:right-10 z-50 ">
       <button
         className="text-white rounded-full w-12 h-12 flex justify-center items-center shadow-lg focus:outline-none"
         onClick={toggleChatBox}
@@ -80,7 +80,7 @@ export default function Chat() {
 
       {/* Chat Box */}
       {isOpen && (
-        <div className="absolute bottom-16 right-0 bg-white w-[350px] rounded-lg shadow-lg border border-gray-200">
+        <div className="absolute bottom-16 right-0 bg-background w-[350px] rounded-lg shadow-lg border border-gray-200">
           <div className="bg-main h-10 p-0 flex items-center rounded-lg">
             <p className="px-2 font-bold">My personal chatbot</p>
           </div>
