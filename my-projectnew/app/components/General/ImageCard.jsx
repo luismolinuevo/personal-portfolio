@@ -20,8 +20,8 @@ const ImageCard = ({ imageUrl, about, id, title, gitHub, liveLink, stack }) => {
       <h1 className="text-center text-[35px] text-main font-bold pb-2">{title}</h1>
       <Link href={`/project/${id}`}>
         <div
-          className="relative w-full md:w-[420px] h-[450px] md:h-[400px] bg-cover bg-center rounded-lg overflow-hidden shadow-2xl"
-          style={{ backgroundImage: `url(${imageUrl})` }}
+          className="relative w-full md:w-[420px] h-[450px] md:h-[400px] bg-center bg-cover  rounded-lg overflow-hidden shadow-2xl"
+          style={{ backgroundImage: `url(${imageUrl})`, backgroundPosition: "center" }}
           onMouseEnter={handleHover}
           onMouseLeave={handleMouseLeave}
         >
