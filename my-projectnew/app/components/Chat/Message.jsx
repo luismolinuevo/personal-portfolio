@@ -22,7 +22,7 @@ export default function Message({ type, message }) {
         )}
         <div
           className={`flex w-full ${
-            type == "user" ? "justify-end" : "justify-normal text-secondary"
+            type == "user" ? "justify-end text-primary" : "justify-normal text-secondary"
           }`}
         >
           <p
