@@ -11,9 +11,19 @@ const projects = [
     img: "/Bloomin.png",
     status: "Completed",
   },
-//   {},
   {
-    id: 1,
+    id: 2,
+    name: "Personal Chatbox",
+    about:
+      "I developed a chatbot using LangChain.js and Next.js that provides detailed information about my professional career, including my resume and portfolio website. It's an interactive tool for career insights.",
+    gitHub: "https://github.com/luismolinuevo/personal-chat-bot",
+    live: "https://personal-chat-bot-coral.vercel.app/",
+    techStack: "Next.js, TailwindCSS, Langchain JS, OpenAI",
+    img: "/PersonalChatbot.png",
+    status: "Completed",
+  },
+  {
+    id: 3,
     name: "Tech Niche",
     about:
       "This is a Full Stack app created with React and Express. Its a ecommerce app for tech with bids, bartering via chat, and negoitation via chat. It allows users to create, delete, and edit there post.",
@@ -25,7 +35,7 @@ const projects = [
     status: "Completed",
   },
   {
-    id: 2,
+    id: 4,
     name: "Shopping Cart",
     about:
       "This app was created with React.js, TailwindCSS, and Redux Tool kit. This app allows user to add and remove items from a shopping cart. Users could also add or decrease the amount of items in a cart. You could also fully clear the cart.",
@@ -36,7 +46,7 @@ const projects = [
     status: "Completed",
   },
   {
-    id: 3,
+    id: 5,
     name: "Fitszy",
     about:
       "This app allows users to create a personal account, custom workouts, and custom exercises for specific workouts. It saves user information and allows users to delete, create, add, and edit their workouts and exercises.",
