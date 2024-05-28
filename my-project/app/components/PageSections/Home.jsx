@@ -13,7 +13,7 @@ export default function Homepage() {
       id="home"
     >
       <div>
-        <main className="w-full flex justify-center pt-[50px] sm:pt-[60px] md:pt-[160px]">
+        <main className="w-full flex justify-center pt-[45px] sm:pt-[60px] md:pt-[160px]">
           <div className="flex flex-col">
             <motion.h1
               className="text-[30px] sm:text-[35px] text-main m-0 leading-tight"
@@ -24,7 +24,7 @@ export default function Homepage() {
               Hello There!
             </motion.h1>
             <motion.h2
-              className="text-[60px] sm:text-[65px]  m-0 leading-tight"
+              className="text-[50px] sm:text-[65px] m-0 leading-tight"
               animate={{ y: 0 }}
               initial={{ y: -100 }}
               transition={{ duration: 0.7, delay: 0.4 }}
@@ -35,7 +35,7 @@ export default function Homepage() {
               className="text-[20px] sm:text-[23px] md:text-[26px] sm:w-[400px] md:w-[600px] lg:w-[800px]"
               animate={{ y: 0 }}
               initial={{ y: -100 }}
-              transition={{ duration: 0.7, delay: 0.8 }}
+              transition={{ duration: 0.7, delay: 0.6 }}
             >
               Im a Full Stack Software Engineer with a passion for web
               development.Welcome to my corner of the internet. Happy to have
