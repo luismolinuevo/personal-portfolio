@@ -39,10 +39,10 @@ export default function page() {
       <h1 className="text-center text-heading text-main font-bold underline pb-2">
         {project?.name}
       </h1>
-      <h2 className="text-[35px] text-main font-bold pb-2">
-        Status:
-        <span className="text-primary font-normal">{project?.status}</span>
-      </h2>
+      <div className="text-[35px] flex gap-2">
+        <h2 className="text-main font-bold">Status:</h2>
+        <p className="font-normal text-primary">{project?.status}</p>
+      </div>
       <h2 className="text-[35px] text-main font-bold pb-2">What I built?</h2>
       <p className="text-[20px] md:text-[24px] md:leading-8">
         {project?.about}
