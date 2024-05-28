@@ -8,9 +8,10 @@ export default function LightModeDarkModeButton() {
 
   useEffect(() => {
     const savedMode = localStorage.getItem("darkMode");
-    setDarkMode(savedMode);
-    console.log(savedMode)
-    if (savedMode) {
+    const isDarkMode = savedMode === "true";
+    setDarkMode(isDarkMode);
+    
+    if (isDarkMode) {
       document.documentElement.classList.add("dark");
     } else {
       document.documentElement.classList.remove("dark");
@@ -20,9 +21,8 @@ export default function LightModeDarkModeButton() {
   const handleClick = () => {
     const newDarkMode = !darkMode;
     setDarkMode(newDarkMode);
-    localStorage.setItem("darkMode", newDarkMode);
+    localStorage.setItem("darkMode", newDarkMode.toString());
     
-    // Toggle the 'dark' class on the html element
     if (newDarkMode) {
       document.documentElement.classList.add("dark");
     } else {
@@ -40,4 +40,3 @@ export default function LightModeDarkModeButton() {
     </button>
   );
 }
-
