@@ -1,4 +1,5 @@
 import React from "react";
+import OpenChatButton from "../General/OpenChatButton";
 
 export default function AboutMe() {
   return (
@@ -37,7 +38,7 @@ export default function AboutMe() {
                 />
               </div>
               <div className="flex justify-center mt-3">
-                <button className="border px-3 py-2 rounded-xl bg-main">Ask chatbot about me</button>
+                <OpenChatButton />
               </div>
             </div>
           </div>

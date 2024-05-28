@@ -1,16 +1,25 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Message from "./Message";
+import useStore from "@/app/store";
 
 export default function Chat() {
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
-  const [isOpen, setIsOpen] = useState(false);
+  const wantToChat = useStore((state) => state.wantToChat);
+  const toggleWantToChat = useStore((state) => state.toggleWantToChat);
+
+  useEffect(() => {
+    setIsOpen(wantToChat);
+  }, [wantToChat]);
+
+  const [isOpen, setIsOpen] = useState(wantToChat);
 
   const toggleChatBox = () => {
     setIsOpen(!isOpen);
+    toggleWantToChat();
   };
 
   const sendMessage = async (e) => {
