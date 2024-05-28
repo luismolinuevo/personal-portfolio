@@ -41,7 +41,7 @@ export default function page() {
       </h1>
       <h2 className="text-[35px] text-main font-bold pb-2">
         Status:
-        <span className="text-black font-normal">{project?.status}</span>
+        <span className="text-primary font-normal">{project?.status}</span>
       </h2>
       <h2 className="text-[35px] text-main font-bold pb-2">What I built?</h2>
       <p className="text-[20px] md:text-[24px] md:leading-8">

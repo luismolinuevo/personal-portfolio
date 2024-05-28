@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import Link from "next/link";
 import { GiHamburgerMenu } from "react-icons/gi";
 import LightModeDarkModeButton from "./LightModeDarkModeButton";
 
@@ -37,12 +38,12 @@ export default function Navbar() {
       style={{ position: isScrolled ? "sticky" : "static", top: 0 }}
     >
       <nav className="flex justify-between z-20 ">
-        <a className="cursor-pointer pr-4" href="#home">
+        <Link className="cursor-pointer pr-4" href="/#home">
           <h1 className={`text-[40px] ${openNav ? "hidden" : ""}`}>
             <span className={`text-main`}>Moli</span>
             <span className={`${isScrolled ? "text-white" : ""}`}>nuevo</span>
           </h1>
-        </a>
+        </Link>
         <div
           className={`${
             openNav ? "h-screen w-full flex justify-center items-center" : ""
@@ -55,41 +56,41 @@ export default function Navbar() {
                 : "hidden"
             } ${isScrolled ? "text-white" : ""}`}
           >
-            <a
+            <Link
               className={`text-main cursor-pointer`}
-              href="#home"
+              href="/#home"
               onClick={() => setOpenNav(false)}
             >
               <li>Home</li>
-            </a>
-            <a
+            </Link>
+            <Link
               className="cursor-pointer"
-              href="#aboutme"
+              href="/#aboutme"
               onClick={() => setOpenNav(false)}
             >
               <li>About Me</li>
-            </a>
-            <a
+            </Link>
+            <Link
               className="cursor-pointer"
-              href="#skills"
+              href="/#skills"
               onClick={() => setOpenNav(false)}
             >
               <li>Skills</li>
-            </a>
-            <a
+            </Link>
+            <Link
               className="cursor-pointer"
-              href="#projects"
+              href="/#projects"
               onClick={() => setOpenNav(false)}
             >
               <li>Projects</li>
-            </a>
-            <a
+            </Link>
+            <Link
               className="bg-main p-2 cursor-pointer text-white shadow-2xl"
-              href="#contactme"
+              href="/#contactme"
               onClick={() => setOpenNav(false)}
             >
               <li>Contact Me</li>
-            </a>
+            </Link>
             <div className="hidden lg:block z-30">
               <LightModeDarkModeButton />
             </div>

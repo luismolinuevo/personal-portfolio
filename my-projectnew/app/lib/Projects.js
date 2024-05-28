@@ -9,7 +9,7 @@ const projects = [
     techStack:
       "Next.js, TailwindCSS, Redux,  Material Tailwind, Express, Prisma, Cloudinary, Jest",
     img: "/Bloomin.png",
-    status: "Completed",
+    status: "Completed April 2024",
   },
   {
     id: 2,
@@ -20,7 +20,7 @@ const projects = [
     live: "https://personal-chat-bot-coral.vercel.app/",
     techStack: "Next.js, TailwindCSS, Langchain JS, OpenAI",
     img: "/PersonalChatbot.png",
-    status: "Completed",
+    status: "Completed May 2024",
   },
   {
     id: 3,
@@ -32,10 +32,22 @@ const projects = [
     techStack:
       "React.js, TailwindCSS, Redux, Express, Prisma, MySQL, Cloudinary, Socket.io",
     img: "/techniche.png",
-    status: "Completed",
+    status: "Completed June 2023",
   },
   {
     id: 4,
+    name: "Web Porfolio",
+    about:
+      "This web portfolio showcases my personal information and features a chat AI bot knowledgeable about my professional background, offering an interactive way to explore my resume and portfolio.",
+    gitHub: "https://github.com/luismolinuevo/personal-portfolio",
+    live: "https://luismolinuevo.com/",
+    techStack:
+      "Next.js, TailwindCSS, Redux, Langchain JS, OpenAI",
+    img: "/techniche.png",
+    status: "Refactored May 2024",
+  },
+  {
+    id: 5,
     name: "Shopping Cart",
     about:
       "This app was created with React.js, TailwindCSS, and Redux Tool kit. This app allows user to add and remove items from a shopping cart. Users could also add or decrease the amount of items in a cart. You could also fully clear the cart.",
@@ -43,10 +55,21 @@ const projects = [
     live: "https://shoppingcart-nu-liart.vercel.app/",
     techStack: "React.js, TailwindCSS, Redux Tool Kit",
     img: "/ShoppingCart.png",
-    status: "Completed",
+    status: "Completed March 2023",
   },
   {
-    id: 5,
+    id: 6,
+    name: "Weather & Todo App",
+    about:
+      "This app uses the OpenWeather API for current weather and a 5-day forecast for New York. It also lets users create, delete, edit, and mark to-dos as completed.",
+    gitHub: "https://github.com/luismolinuevo/weather-and-todo/",
+    live: null,
+    techStack: "React.js, TailwindCSS, Express.js/Node.js, Sequelize.js",
+    img: "/WeatherAndTodo.png",
+    status: "Completed June 2023",
+  },
+  {
+    id: 7,
     name: "Fitszy",
     about:
       "This app allows users to create a personal account, custom workouts, and custom exercises for specific workouts. It saves user information and allows users to delete, create, add, and edit their workouts and exercises.",
@@ -54,7 +77,7 @@ const projects = [
     live: null,
     techStack: "React.js, CSS, Express, SequelizeORM, PostgreSQL",
     img: "/WorkoutGif.gif",
-    status: "Completed",
+    status: "Completed Oct 2023",
   },
   // {
 
