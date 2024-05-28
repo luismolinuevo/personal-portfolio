@@ -36,7 +36,7 @@ const projects = [
   },
   {
     id: 4,
-    name: "Web Porfolio",
+    name: "Web Portfolio",
     about:
       "This web portfolio showcases my personal information and features a chat AI bot knowledgeable about my professional background, offering an interactive way to explore my resume and portfolio.",
     gitHub: "https://github.com/luismolinuevo/personal-portfolio",
