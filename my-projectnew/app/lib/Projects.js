@@ -8,7 +8,7 @@ const projects = [
     live: "https://bloomin-snowy.vercel.app/",
     techStack:
       "Next.js, TailwindCSS, Redux,  Material Tailwind, Express, Prisma, Cloudinary, Jest",
-    img: "/Bloomin.png",
+    img: "/projectimgs/Bloomin.png",
     status: "Completed April 2024",
   },
   {
@@ -19,7 +19,7 @@ const projects = [
     gitHub: "https://github.com/luismolinuevo/personal-chat-bot",
     live: "https://personal-chat-bot-coral.vercel.app/",
     techStack: "Next.js, TailwindCSS, Langchain JS, OpenAI",
-    img: "/PersonalChatbot.png",
+    img: "/projectimgs/PersonalChatbot.png",
     status: "Completed May 2024",
   },
   {
@@ -31,7 +31,7 @@ const projects = [
     live: "https://digitaldish.vercel.app/",
     techStack:
       "React.js, TailwindCSS, Redux, Express, Prisma, MySQL, Cloudinary, Socket.io",
-    img: "/techniche.png",
+    img: "/projectimgs/techniche.png",
     status: "Completed June 2023",
   },
   {
@@ -42,8 +42,8 @@ const projects = [
     gitHub: "https://github.com/luismolinuevo/personal-portfolio",
     live: "https://luismolinuevo.com/",
     techStack:
-      "Next.js, TailwindCSS, Redux, Langchain JS, OpenAI",
-    img: "/techniche.png",
+      "Next.js, TailwindCSS, Zustand, Langchain JS, OpenAI",
+    img: "/projectimgs/Portfolio.png",
     status: "Refactored May 2024",
   },
   {
@@ -54,7 +54,7 @@ const projects = [
     gitHub: "https://github.com/luismolinuevo/shoppingcart",
     live: "https://shoppingcart-nu-liart.vercel.app/",
     techStack: "React.js, TailwindCSS, Redux Tool Kit",
-    img: "/ShoppingCart.png",
+    img: "/projectimgs/ShoppingCart.png",
     status: "Completed March 2023",
   },
   {
@@ -65,7 +65,7 @@ const projects = [
     gitHub: "https://github.com/luismolinuevo/weather-and-todo/",
     live: null,
     techStack: "React.js, TailwindCSS, Express.js/Node.js, Sequelize.js",
-    img: "/WeatherAndTodo.png",
+    img: "/projectimgs/WeatherAndTodo.png",
     status: "Completed June 2023",
   },
   {
@@ -76,7 +76,7 @@ const projects = [
     gitHub: "https://github.com/luismolinuevo/workoutappv2",
     live: null,
     techStack: "React.js, CSS, Express, SequelizeORM, PostgreSQL",
-    img: "/WorkoutGif.gif",
+    img: "/projectimgs/WorkoutGif.gif",
     status: "Completed Oct 2023",
   },
   // {

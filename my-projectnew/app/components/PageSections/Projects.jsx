@@ -1,15 +1,10 @@
 "use client";
 
-import { useState } from "react";
 import ImageCard from "../General/ImageCard";
 import projects from "@/app/lib/Projects";
+import Link from "next/link";
 
 export default function Projects() {
-  const [visibleCount, setVisibleCount] = useState(3);
-
-  const loadMoreProjects = () => {
-    setVisibleCount((prevCount) => prevCount + 3);
-  };
   return (
     <section className="py-20 md:px-[80px]" id="projects">
       <div>
@@ -18,7 +13,7 @@ export default function Projects() {
         </h1>
         <div className="flex flex-wrap justify-center gap-12">
           {projects && projects.length != 0 ? (
-            projects.slice(0, visibleCount).map((project) => (
+            projects.slice(0, 3).map((project) => (
               <div className="w-full md:w-auto px-4" key={project.id}>
                 <ImageCard
                   about={project.about}
@@ -35,16 +30,13 @@ export default function Projects() {
             <p>No projects available.</p>
           )}
         </div>
-        {visibleCount < projects.length && (
-          <div className="flex justify-center mt-8">
-            <button
-              onClick={loadMoreProjects}
-              className="bg-main text-white px-4 py-2 rounded-md"
-            >
+        <div className="flex justify-center mt-8">
+          <Link href="/project">
+            <button className="bg-main text-white px-4 py-2 rounded-md">
               Load More
             </button>
-          </div>
-        )}
+          </Link>
+        </div>
       </div>
     </section>
   );
