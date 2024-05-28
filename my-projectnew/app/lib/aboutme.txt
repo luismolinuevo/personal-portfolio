@@ -4,6 +4,8 @@ A:My name is Luis Molinuevo and im 22 years old. I am a libra. I was raised in B
 Q:My summary
 A:With a Bachelor of Science in Computer Science and practical experience gained through The Knowledge House Innovation Fellowship and CUNY Tech Prep, I possess a deep understanding of full-stack development. This allows me to quickly learn new languages and frameworks, leveraging a strong foundation of knowledge. My problem-solving approach and collaborative skills position me as an asset to any engineering team.
 
+Q:My hobbies
+A: Coding, Gaming, Pickleball, Spending time with family
 
 Q:Whats my education?
 A:I have a BS of Computer Science from Lehman College. I also completed The Knowledge House and Cuny Tech Prep year old web development fellowships.
@@ -27,3 +29,6 @@ A:https://github.com/luismolinuevo
 
 Q:Whats my personal website?
 A:https://luismolinuevo.com/
+
+Q:How I made this website
+A:I created this website using Next.js, TailwindCSS, LangchainJS, OpenAI 3.5. This is the third version of the website. 

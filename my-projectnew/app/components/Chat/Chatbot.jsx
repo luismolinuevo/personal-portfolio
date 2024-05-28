@@ -57,7 +57,7 @@ export default function Chat() {
   return (
     <div className="fixed bottom-8 sm:bottom-10 right-8 sm:right-10 z-50 ">
       <button
-        className="text-white bg-main rounded-full w-12 sm:w-14 h-12 sm:h-14 flex justify-center items-center shadow-lg focus:outline-none"
+        className="text-white bg-main rounded-full w-12 sm:w-14 h-12 sm:h-14 flex justify-center items-center shadow-lg focus:outline-none border-[1px] border-black p-[2px]"
         onClick={toggleChatBox}
       >
         {!isOpen ? (
