@@ -15,6 +15,10 @@ const ImageCard = ({ imageUrl, about, id, title, gitHub, liveLink, stack }) => {
     setHovered(false);
   };
 
+  const handleLinkClick = (e) => {
+    e.stopPropagation(); // Prevents the click event from propagating to the parent link
+  };
+
   return (
     <div>
       <h1 className="text-center text-[35px] text-main font-bold pb-2">{title}</h1>
@@ -38,6 +42,7 @@ const ImageCard = ({ imageUrl, about, id, title, gitHub, liveLink, stack }) => {
                     rel="noopener noreferrer"
                     className="text-[30px]"
                     title="website"
+                    onClick={handleLinkClick} 
                   >
                     <BsGlobe />
                   </a>
@@ -49,6 +54,7 @@ const ImageCard = ({ imageUrl, about, id, title, gitHub, liveLink, stack }) => {
                     rel="noopener noreferrer"
                     className="text-[30px]"
                     title="github"
+                    onClick={handleLinkClick} 
                   >
                     <BsGithub />
                   </a>
