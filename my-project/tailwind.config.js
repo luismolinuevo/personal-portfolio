@@ -1,22 +1,23 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
-      fontFamily: {
-        "tit": ["Titillium Web", "sans-serif"],
-      },
       colors: {
-        main: '#05aff2'
+        main: "#05aff2",
+        primary: "var(--text-primary)",
+        secondary: "var(--text-secondary)",
+        background: "var(--background)"
       },
       fontSize: {
         heading: "50px",
-        modileHeading: "40px"
-      }
+        modileHeading: "40px",
+      },
     },
   },
   plugins: [],
-}
+};
