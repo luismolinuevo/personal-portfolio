@@ -47,7 +47,7 @@ export default function page() {
       <p className="text-[20px] md:text-[24px] md:leading-8">
         {project?.about}
       </p>
-      <h2 className="text-[35px] text-main font-bold pb-2">Whats I used?</h2>
+      <h2 className="text-[35px] text-main font-bold pb-2">What I used?</h2>
       <p className="text-[20px] md:text-[24px] md:leading-8">
         {project?.techStack}
       </p>

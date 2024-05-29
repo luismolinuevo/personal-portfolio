@@ -26,7 +26,7 @@ const projects = [
     id: 3,
     name: "Tech Niche",
     about:
-      "This is a Full Stack app created with React and Express. Its a ecommerce app for tech with bids, bartering via chat, and negoitation via chat. It allows users to create, delete, and edit there post.",
+      "This is a Full Stack app created with React and Express. Its a ecommerce app for tech with bids, bartering via chat, and negotiation via chat. It allows users to create, delete, and edit there post.",
     gitHub: "https://github.com/luismolinuevo/digitaldish",
     live: "https://digitaldish.vercel.app/",
     techStack:
@@ -50,7 +50,7 @@ const projects = [
     id: 5,
     name: "Shopping Cart",
     about:
-      "This app was created with React.js, TailwindCSS, and Redux Tool kit. This app allows user to add and remove items from a shopping cart. Users could also add or decrease the amount of items in a cart. You could also fully clear the cart.",
+      "This app was created with React.js, TailwindCSS, and Redux Tool kit. This app allows user to add and remove items from a shopping cart. Users can also add or decrease the amount of items in a cart. You could also fully clear the cart.",
     gitHub: "https://github.com/luismolinuevo/shoppingcart",
     live: "https://shoppingcart-nu-liart.vercel.app/",
     techStack: "React.js, TailwindCSS, Redux Tool Kit",

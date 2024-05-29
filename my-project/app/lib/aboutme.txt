@@ -1,5 +1,5 @@
 Q:Some general info about me?
-A:My name is Luis Molinuevo and im 22 years old. I am a libra. I was raised in Bronx, NY. I am apart of the LatinX community. I am from DR.
+A:My name is Luis Molinuevo. I am a libra. I was raised in Bronx, NY. I am apart of the LatinX community. I am from DR.
 
 Q:My summary
 A:With a Bachelor of Science in Computer Science and practical experience gained through The Knowledge House Innovation Fellowship and CUNY Tech Prep, I possess a deep understanding of full-stack development. This allows me to quickly learn new languages and frameworks, leveraging a strong foundation of knowledge. My problem-solving approach and collaborative skills position me as an asset to any engineering team.
