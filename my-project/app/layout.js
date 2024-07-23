@@ -8,7 +8,10 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Luis Molinuevo",
-  description: "Luis Molinuevo's personal website",
+  openGraph: {
+    title: "Luis Molinuevo",
+    description: "Luis Molinuevo's personal website",
+  },
 };
 
 export default function RootLayout({ children }) {

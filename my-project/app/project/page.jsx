@@ -4,6 +4,13 @@ import { useState } from "react";
 import ImageCard from "../components/General/ImageCard";
 import projects from "@/app/lib/Projects";
 
+// export const metadata = {
+//   title: 'Project',
+//   openGraph: {
+//     title: 'Project',
+//   },
+// }
+
 export default function page() {
   const [visibleCount, setVisibleCount] = useState(10);
 
